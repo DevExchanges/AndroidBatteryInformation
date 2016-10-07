@@ -43,16 +43,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-        registerReceiver(battery_receiver, filter);
+        registerReceiver(batteryReceiver, filter);
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        unregisterReceiver(battery_receiver);
+        unregisterReceiver(batteryReceiver);
     }
 
-    private BroadcastReceiver battery_receiver = new BroadcastReceiver() {
+    private BroadcastReceiver batteryReceiver = new BroadcastReceiver() {
         @SuppressLint("SetTextI18n")
         @Override
         public void onReceive(Context context, Intent intent) {

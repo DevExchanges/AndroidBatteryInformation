@@ -1,6 +1,5 @@
 package info.devexchanges.androidbatteryinformation;
 
-
 import android.app.Activity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
